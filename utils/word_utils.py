@@ -1,4 +1,4 @@
-import docx2txt
+# import docx2txt
 
 
 def convert_docx_to_text(file):

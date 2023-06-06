@@ -1,4 +1,4 @@
-from utils.pdf_utils import convert_pdf_to_txt
+# from utils.pdf_utils import convert_pdf_to_txt
 from utils.string_utils import remove_extra_spaces
 from utils.word_utils import convert_docx_to_text
 

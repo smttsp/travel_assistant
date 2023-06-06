@@ -29,22 +29,17 @@ def get_content_from_inputs(resume_file):
     # return content
 
 
-# completion = openai.ChatCompletion.create(
-#   model="gpt-3.5-turbo",
-#   messages=[
-#     {"role": "user", "content": content}
-#   ]
-# )
-#
-# print(completion.choices[0].message.content)
 
 
 if __name__ == "__main__":
     resume_folder = "/users/samettaspinar/desktop/resumes/"
 
-    resume_files = glob.glob(resume_folder + "/*")
+    query = (
+        "can you give me 5 touristic places near boston in a csv format as:"
+        "``` name_of_location | lattitude | longitude | city | state | country | zip code ```" 
+        "can you give this output as csv? no need to show the code to generate the csv file"
+    )
+    print(query)
 
-    for resume_file in resume_files:
-        resume_content = read_text_from_file(resume_file)
-        pprint(resume_content)
-        print("#" * 100, "\n\n")
+    from utils.chatgpt_utils import get_location_csv
+    get_location_csv(query)
