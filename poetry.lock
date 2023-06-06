@@ -954,6 +954,20 @@ toml = "*"
 testing = ["fields", "hunter", "process-tests", "pytest-xdist", "six", "virtualenv"]
 
 [[package]]
+name = "python-weather"
+version = "1.0.2"
+description = "A free and asynchronous weather API wrapper made in Python, for Python."
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "python-weather-1.0.2.tar.gz", hash = "sha256:7932aab75db8f5169e2123db03c9ea47442d96b8f794c092c22dd058184f1fd4"},
+    {file = "python_weather-1.0.2-py3-none-any.whl", hash = "sha256:ea3603dce2ad63f89dad7d7d229295c1f53b2b0023f439889ae8b14ace9f16c7"},
+]
+
+[package.dependencies]
+aiohttp = "3.8.4"
+
+[[package]]
 name = "requests"
 version = "2.31.0"
 description = "Python HTTP for Humans."
@@ -1209,4 +1223,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.8,<3.12"
-content-hash = "9b183a6634b7de0bec0153da0824a721998153815261c3b2d388a52c94e6234d"
+content-hash = "fdc2f95148d3ebefe7e38fd9411741970dbb90e217d3839f806539a4524c669d"

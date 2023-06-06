@@ -5,13 +5,12 @@ from pprint import pprint
 import openai
 
 from utils.file_utils import read_text_from_file
-from utils.job_description_utils import get_jd_from_inputs
 
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
-def get_content_from_inputs(resume_file, jd_file, jd_link, jd_text):
+def get_content_from_inputs(resume_file):
     # resume_file = '/users/samettaspinar/desktop/resumes/Samet_resume.pdf'
     # resume_file = "/users/samettaspinar/desktop/resumes/resume2.doc"
     # jd_file = "/users/samettaspinar/desktop/jd/cellino_jd.pdf"
@@ -21,14 +20,13 @@ def get_content_from_inputs(resume_file, jd_file, jd_link, jd_text):
     # jd = jd_main(jd_link)
 
     resume_content = read_text_from_file(resume_file)
-    jd_content = get_jd_from_inputs(jd_file, jd_link, jd_text)
 
-    content = (
-        f"Given that my resume_file is: {resume_content} \n\n"
-        f"and job description I am applying is {jd_content}.\n\n"
-        "Can you write me a cover letter"
-    )
-    return content
+    # content = (
+    #     f"Given that my resume_file is: {resume_content} \n\n"
+    #     f"and job description I am applying is {jd_content}.\n\n"
+    #     "Can you write me a cover letter"
+    # )
+    # return content
 
 
 # completion = openai.ChatCompletion.create(
