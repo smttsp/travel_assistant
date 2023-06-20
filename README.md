@@ -5,7 +5,7 @@ Travel assistant will help users decide where to go
 - you will tell what you wanna do, such as “I wanna do a road trip from Boston to somewhere that has some lakes or natural places with a lot of hiking trails. I can drive at most 3-4 hours, what are my options“, and this tool will give you some suggestions.
 - It will use multiple tools such as
     - chatgpt or similar (bard etc)
-    - wolfram alpha LLM (https://products.wolframalpha.com/llm-api/documentation) for verification
+    - wolfram alpha LLM (https://products.wolframalpha.com/llm-api/documentation) for verification. ChatGPT may not be super accurate in terms of distances and all (see https://writings.stephenwolfram.com/2023/01/wolframalpha-as-the-way-to-bring-computational-knowledge-superpowers-to-chatgpt/)
     - temperature-related tools (finding the temperature at the place at the travel dates, or previous years)
     - Nerdwallet and a bunch of other APIs
 
